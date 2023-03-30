@@ -7,9 +7,9 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class Main {
-        static Fase fase;
-        static TargetaProde prode;
-        static Apuesta jugada;
+        static Fase fase = new Fase();
+        static TargetaProde prode = new TargetaProde();
+        static Apuesta jugada = new Apuesta() ;
         static Persona jugador = new Persona("Juan", "Perez");
         static int nro = 0;
     public static void main(String[] args) throws IOException {
