@@ -28,12 +28,17 @@ public class Apuesta {
         this.apuesta = apuesta;
     }
     public Equipo calcularEquipoApostado(Integer apuesta, String equipo1, String equipo2){
-        if(apuesta > 2)
-            return this.equipoApostado = new Equipo(equipo2);
-        else if(apuesta < 2)
-            return this.equipoApostado = new Equipo(equipo1);
-        else
-            return this.equipoApostado = new Equipo("EMPATE");
+        switch (apuesta){
+            case 1:
+                return this.equipoApostado = new Equipo(equipo1);
+            case 2:
+                 return this.equipoApostado = new Equipo("EMPATE");
+            case 3:
+                return this.equipoApostado = new Equipo(equipo2);
+            default:
+                return null;
+
+        }
     }
 
     @Override

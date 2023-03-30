@@ -7,7 +7,9 @@
     <list default="true" id="0a8d70d9-e5f6-4dbe-ba88-27a4bf230e6c" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/Prode/Persona.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prode/TargetaProde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/TargetaProde.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pronostico.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pronostico.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resultados.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resultados.txt" afterDir="false" />
     </list>
