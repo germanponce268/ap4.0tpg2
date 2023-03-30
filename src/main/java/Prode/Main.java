@@ -1,5 +1,6 @@
 package Prode;
 
+import javax.swing.*;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -9,10 +10,11 @@ public class Main {
         static Fase fase = new Fase();
         static TargetaProde prode = new TargetaProde();
         static Apuesta jugada = new Apuesta() ;
+        static Persona jugador = new Persona("Juan", "Perez");
         static int nro = 0;
     public static void main(String[] args) throws IOException {
-        Path archivoResultados = Paths.get("C:\\Users\\laded\\IdeaProjects\\ArgentinaPrograma\\src\\main\\java\\resultados.txt");
-        Path archivoPronostioco = Paths.get("C:\\Users\\laded\\IdeaProjects\\ArgentinaPrograma\\src\\main\\java\\pronostico.txt");
+        Path archivoResultados = Paths.get("src/resultados.txt");
+        Path archivoPronostioco = Paths.get("src/pronostico.txt");
 
         Scanner lector = new Scanner(archivoResultados);
         Scanner lector2 = new Scanner(archivoPronostioco);
@@ -48,6 +50,8 @@ public class Main {
                prode.setPuntos(puntos);
             }
         }
-        System.out.println("El loco saco " + prode.getPuntos()+ " puntos!!");
+        jugador.setTargetaProde(prode);
+        System.out.println("El jugador " + jugador.getNombre()  + " saco " + prode.getPuntos()+ " puntos!!");
+        JOptionPane.showMessageDialog(null,"El jugador" + jugador.getNombre() + " saco " + prode.getPuntos()+ " puntos!") ;
     }
 }

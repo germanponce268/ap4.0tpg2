@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a8d70d9-e5f6-4dbe-ba88-27a4bf230e6c" name="Changes" comment="" />
+    <list default="true" id="0a8d70d9-e5f6-4dbe-ba88-27a4bf230e6c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Prode/Persona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pronostico.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pronostico.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/resultados.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/resultados.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -38,6 +51,10 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\laded\IdeaProjects\AP-MYJ-TT-G2-TP\src\main\java" />
       <recent name="C:\Users\laded\IdeaProjects\AP-MYJ-TT-G2-TP\src\main\java\Prode" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\laded\IdeaProjects\AP-MYJ-TT-G2-TP\src" />
+      <recent name="C:\Users\laded\IdeaProjects\AP-MYJ-TT-G2-TP\src\main\resources" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
