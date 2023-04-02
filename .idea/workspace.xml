@@ -14,14 +14,6 @@
       <change afterPath="$PROJECT_DIR$/src/pronosticosMundial.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/resultados2.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/Prode/Apuesta.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/Prode/Equipo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/Prode/Fase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/Prode/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/Prode/Partido.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/Prode/TargetaProde.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/pronostico.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main/java/resultados.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Fase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Fase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Main.java" afterDir="false" />
@@ -62,7 +54,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/laded/IdeaProjects/AP-MYJ-TT-G2-TP/src/main/java",
+    "last_opened_file_path": "C:/Users/laded/IdeaProjects/AP-MYJ-TT-G2-TP",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -90,11 +82,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Prode/Main.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Prode/Main.java</url>
           <line>30</line>

@@ -1,28 +1,21 @@
 package Prode;
 
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
 
 public class Fase {
-    private Integer nroFase;
-    private HashMap<Integer,HashMap<Integer,Partido>>partidosfases;
+    private Integer nroFase;;
     private HashMap<Integer, Partido> partidos;
 
     public Fase() {
         this.partidos = new HashMap<>();
-        this.partidosfases = new HashMap<>();
     }
 
     public void agregarPartido(Integer fechaNro, Partido partido){
         this.partidos.put(fechaNro, partido);
     }
 
-    public void agregarFasePartido(Integer fase, HashMap fasePartido){
-        this.partidosfases.put(fase, fasePartido);
-    }
-    public HashMap<Integer, HashMap<Integer, Partido>> getPartidosfases() {
-        return partidosfases;
-    }
 
     public HashMap<Integer, Partido> getPartidos() {
         return partidos;

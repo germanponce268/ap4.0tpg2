@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -11,7 +12,6 @@ public class Main {
         static TargetaProde prode = new TargetaProde();
         static Apuesta jugada = new Apuesta() ;
         static Persona jugador = new Persona("Jose", "Perez");
-        static int nro = 0;
     public static void main(String[] args) throws IOException {
         Path archivoResultados = Paths.get("src/resultados2.txt");
         Path archivoPronostioco = Paths.get("src/apuestas2.txt");
@@ -38,13 +38,12 @@ public class Main {
         int golesVisitante = lector.nextInt();
 
         //se instancia clase Partido asignando los valores por contructor
-        nro++;
-        Partido partido = new Partido(nro, new Equipo(local), new Equipo(visitante), golesLocal, golesVisitante, fase.calcularResultado(golesLocal,golesVisitante));
+
+        Partido partido = new Partido(Integer.parseInt(nroPartido), new Equipo(local), new Equipo(visitante), golesLocal, golesVisitante, fase.calcularResultado(golesLocal,golesVisitante));
 
         //se almacena el partido en una coleccion de tipo HashMap a traves del metodo agregarPartido()
         fase.agregarPartido(partido.getNro(), partido);
         fase.setNroFase(nroFase);
-        fase.agregarFasePartido(nroFase, fase.getPartidos());
         //se leen y almacenan en variables los valores de la apuesta
         //String nombre = lector2.next();
         String fecha = lector2.next();
