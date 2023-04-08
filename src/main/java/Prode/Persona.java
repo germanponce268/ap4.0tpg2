@@ -4,10 +4,23 @@ public class Persona {
     private String nombre;
     private String apellido;
     private TargetaProde targetaProde;
+    private Integer puntaje;
 
     public Persona(String nombre, String apellido) {
         this.nombre = nombre;
         this.apellido = apellido;
+    }
+
+    public Persona(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Integer getPuntaje() {
+        return puntaje;
+    }
+
+    public void setPuntaje(Integer puntaje) {
+        this.puntaje = puntaje;
     }
 
     public String getNombre() {

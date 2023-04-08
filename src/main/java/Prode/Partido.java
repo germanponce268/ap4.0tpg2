@@ -1,9 +1,10 @@
 package Prode;
 
 public class Partido {
-    private Integer nro;
-   private Equipo local;
-   private Equipo visitante;
+    private Integer nroFase;
+    private Integer nroPartido;
+   private String local;
+   private String visitante;
 
    private Integer golesLocal;
    private Integer golesVisitante;
@@ -12,21 +13,30 @@ public class Partido {
     public Partido() {
     }
 
-    public Partido(Integer nro, Equipo local, Equipo visitante, Integer golesLocal, Integer golesVisitante, Integer resultado) {
-        this.nro = nro;
+
+    public Partido(Integer nroFase,Integer nroPartido, String local, String visitante, int golesLocal, int golesVisitante) {
+        this.nroPartido = nroPartido;
+        this.nroFase = nroFase;
         this.local = local;
         this.visitante = visitante;
         this.golesLocal = golesLocal;
         this.golesVisitante = golesVisitante;
-        this.resultado = resultado;
+        this.resultado = obtenerResultado(golesLocal, golesVisitante);
     }
 
-    public Integer getNro() {
-        return nro;
+    private Integer obtenerResultado(Integer golesLocal, Integer golesVisitante) {
+        if(golesLocal > golesVisitante){
+            return 1;
+        }else if(golesLocal == golesVisitante){
+            return 2;
+        }else{
+            return 3;
+        }
     }
+
 
     public void setNro(Integer nro) {
-        this.nro = nro;
+        this.nroPartido = nro;
     }
 
     public Integer getResultado() {
@@ -37,26 +47,58 @@ public class Partido {
         this.resultado = resultado;
     }
 
-    public Equipo getLocal() {
+    public String getLocal() {
         return local;
     }
 
-    public void setLocal(Equipo local) {
+    public void setLocal(String local) {
         this.local = local;
     }
 
-    public Equipo getVisitante() {
+    public String getVisitante() {
         return visitante;
     }
 
-    public void setVisitante(Equipo visitante) {
+    public void setVisitante(String visitante) {
         this.visitante = visitante;
+    }
+
+    public Integer getNroFase() {
+        return nroFase;
+    }
+
+    public void setNroFase(Integer nroFase) {
+        this.nroFase = nroFase;
+    }
+
+    public Integer getNroPartido() {
+        return nroPartido;
+    }
+
+    public void setNroPartido(Integer nroPartido) {
+        this.nroPartido = nroPartido;
+    }
+
+    public Integer getGolesLocal() {
+        return golesLocal;
+    }
+
+    public void setGolesLocal(Integer golesLocal) {
+        this.golesLocal = golesLocal;
+    }
+
+    public Integer getGolesVisitante() {
+        return golesVisitante;
+    }
+
+    public void setGolesVisitante(Integer golesVisitante) {
+        this.golesVisitante = golesVisitante;
     }
 
     @Override
     public String toString() {
         return "Partido{" +
-                "nro=" + nro +
+                "nro=" + nroPartido +
                 ", local=" + local +
                 ", visitante=" + visitante +
                 ", golesLocal=" + golesLocal +

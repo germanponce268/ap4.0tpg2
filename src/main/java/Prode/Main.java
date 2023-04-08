@@ -1,75 +1,71 @@
 package Prode;
 
-import javax.swing.*;
+import Prode.Apuesta;
+import Prode.Fase;
+import Prode.Partido;
+import Prode.TargetaProde;
+
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
-        static Fase fase = new Fase();
-        static TargetaProde prode = new TargetaProde();
-        static Apuesta jugada = new Apuesta() ;
-        static Persona jugador = new Persona("Jose", "Perez");
+
+    static Fase fase = new Fase();
+    static Apuesta jugada = new Apuesta();
+    static TargetaProde prode = new TargetaProde();
+    static Partido partido = new Partido();
     public static void main(String[] args) throws IOException {
-        Path archivoResultados = Paths.get("src/resultados2.txt");
-        Path archivoPronostioco = Paths.get("src/apuestas2.txt");
-        Path resultadosMundial = Paths.get("src/partidosmundial2.csv");
-        Path pronosticosMundial = Paths.get("src/pronosticosMundial.csv");
-
-        Scanner lector = new Scanner(resultadosMundial);
-        Scanner lector2 = new Scanner(pronosticosMundial);
+        Path resultadosLocal = Paths.get("src/resultados2.txt");
+        Path pronosticoLocal = Paths.get("apuestas3.csv");
 
 
-        lector.useDelimiter("[;|\\r|\\n]");
-        lector2.useDelimiter("[;\\r|\\n|]");
+        Scanner lector = new Scanner(resultadosLocal);
+        Scanner lector2 = new Scanner(pronosticoLocal);
 
-        while(lector.hasNext()){
 
-            //se leen los valores de resultados y se almacenan en variables
-        String nroPartido = lector.next();
-        if(nroPartido.equals("") || nroPartido.equals(" ")) nroPartido = lector.next();
-        int nroFase = lector.nextInt();
-        String local = lector.next();
-        if(local.equals("")||local.equals(" ")) local = lector.next();
-        String visitante = lector.next();
-        int golesLocal = lector.nextInt();
-        int golesVisitante = lector.nextInt();
+        lector.useDelimiter("[,|\\r|\\n]");
+        lector2.useDelimiter("[,\\r|\\n|]");
 
-        //se instancia clase Partido asignando los valores por contructor
+        while(lector2.hasNext()){
+            if(lector.hasNext()){
+                String nroFase = lector.next();
+                if (nroFase.equals("") || nroFase.equals(" ")) nroFase = lector.next();
+                int nroPartido = lector.nextInt();
+                String local = lector.next();
+                if (local.equals("") || local.equals(" ")) local = lector.next();
+                String visitante = lector.next();
+                int golesLocal = lector.nextInt();
+                int golesVisitante = lector.nextInt();
 
-        Partido partido = new Partido(Integer.parseInt(nroPartido), new Equipo(local), new Equipo(visitante), golesLocal, golesVisitante, fase.calcularResultado(golesLocal,golesVisitante));
+                partido = new Partido(Integer.parseInt(nroFase),nroPartido, local, visitante, golesLocal, golesVisitante);
 
-        //se almacena el partido en una coleccion de tipo HashMap a traves del metodo agregarPartido()
-        fase.agregarPartido(partido.getNro(), partido);
-        fase.setNroFase(nroFase);
-        //se leen y almacenan en variables los valores de la apuesta
-        //String nombre = lector2.next();
-        String fecha = lector2.next();
-        if(fecha.equals("") || fecha.equals(" ")) fecha = lector2.next();
-        int ronda = lector2.nextInt();
-        String equipo1 = lector2.next();
-        if(equipo1.equals("")||local.equals(" ")) equipo1 = lector2.next();
-        String equipo2 = lector2.next();
-        int apuesta = lector2.nextInt();
+                fase.agregarPartido(partido);
+            }
+            String nombreApostador = lector2.next();
+            if (nombreApostador.equals("") || nombreApostador.equals(" ")) nombreApostador = lector2.next();
+            int nroFaseApuesta = lector2.nextInt();
+            int nroPartidoApuesta = lector2.nextInt();
+            String equipoLocalApuesta = lector2.next();
+            if (equipoLocalApuesta.equals("") || equipoLocalApuesta.equals(" ")) equipoLocalApuesta = lector2.next();
+            String equipoVisitanteApuesta = lector2.next();
+            int apuesta = lector2.nextInt();
 
-        //se caulcula el equipo apostado
-        jugada = new Apuesta(jugada.calcularEquipoApostado(apuesta, equipo1, equipo2),apuesta);
+            jugada = new Apuesta(equipoLocalApuesta,equipoVisitanteApuesta,apuesta,nroPartidoApuesta);
 
-        //se agrega la jugada al ArrayList de jugadas
-        prode.agregarApuesta(jugada);
-        System.out.println(partido);
+            prode.agregarApuesta(jugada);
+            prode.calcularPuntaje(fase.getPartidos(), nombreApostador);
+            System.out.println(nroPartidoApuesta);
         }
 
-       ///se calcula el puntaje de la apuesta realizada
-        prode.calcularPuntaje(fase.getPartidos().values());
-        jugador.setTargetaProde(prode);
+        for(Map.Entry<String, Integer> entry : prode.getParticipantes().entrySet()){
+            String nombre = entry.getKey();
+            int puntos = entry.getValue();
+            System.out.println(nombre + " saco " + puntos);
+        }
 
-        System.out.println("El jugador " + jugador.getNombre()  + " saco " + prode.getPuntos()+ " puntos!!");
-
-        JOptionPane.showMessageDialog(null,"El jugador" + jugador.getNombre() + " saco " + prode.getPuntos()+ " puntos!") ;
+        System.out.println("Anda " + fase.getPartidos().size() + " " + prode.getApuestas().size());
     }
-
-
 }
