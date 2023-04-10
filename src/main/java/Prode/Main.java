@@ -18,6 +18,7 @@ public class Main {
     static TargetaProde prode = new TargetaProde();
     static Partido partido = new Partido();
     public static void main(String[] args) throws IOException {
+
         Path resultadosLocal = Paths.get("src/resultados2.txt");
         Path pronosticoLocal = Paths.get("apuestas3.csv");
 

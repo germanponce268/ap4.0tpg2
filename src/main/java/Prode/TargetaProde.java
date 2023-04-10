@@ -34,10 +34,10 @@ public class TargetaProde {
                 if(partido.getResultado().equals(this.apuestas.get(this.apuestas.size()-1).getApuesta())){
                     this.puntosGanados = 1;
                     Integer puntajeAnterior = this.participantes.get(nombreApostador);
-                    if(this.participantes.get(nombreApostador)!= null){
-                        this.participantes.put(nombreApostador, puntajeAnterior + this.puntosGanados);
-                    }else{
+                    if(!this.participantes.containsKey(nombreApostador)){
                         this.participantes.put(nombreApostador, this.puntosGanados);
+                    }else{
+                        this.participantes.put(nombreApostador, puntajeAnterior + this.puntosGanados);
                     }
                 }
             }
