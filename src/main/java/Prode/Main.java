@@ -27,7 +27,7 @@ public class Main {
         Scanner lector2 = new Scanner(pronosticoLocal);
 
 
-        lectgit or.useDelimiter("[,|\\r|\\n]");
+        lector.useDelimiter("[,|\\r|\\n]");
         lector2.useDelimiter("[,\\r|\\n|]");
 
         while(lector2.hasNext()){
