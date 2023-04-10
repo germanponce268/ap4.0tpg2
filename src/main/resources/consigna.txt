@@ -1,0 +1,4 @@
+Una clase que tenga una instancia por cada partido jugado:- equipo local- equipo visitante- goles local- goles visitante
+Una clase que guarde todos los partidos de una fecha (Ronda,  Fecha o Fase)
+Una clase que guarde todas las fechas (Torneo o Campeonato)
+Una clase por cada pronóstico:(un pronóstico es el resultado que un jugador estima para un partido en particular)- cual es el partido- cual es el resultadoUna clase que guarde todos los pronosticos de un jugador en particular (Jugador, PronosticosJugador)Una clase que guarde todos los jugadores (Prode, Juego) 

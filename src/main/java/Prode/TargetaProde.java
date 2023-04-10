@@ -1,6 +1,7 @@
 package Prode;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 public class TargetaProde {
     private ArrayList<Apuesta> apuestas;
@@ -8,6 +9,7 @@ public class TargetaProde {
 
     public TargetaProde() {
         this.apuestas = new ArrayList<>();
+        this.puntos = 0;
     }
 
     public void agregarApuesta(Apuesta apuesta){
@@ -24,6 +26,13 @@ public class TargetaProde {
 
     public Integer getPuntos() {
         return puntos;
+    }
+    public void calcularPuntaje(ArrayList<Partido> ronda){
+        for(Partido partido : ronda){
+            if(partido.getResultado() == this.getApuestas().get(partido.getNro()-1).getApuesta()){
+                this.puntos++;
+            }
+        }
     }
 
     public void setPuntos(Integer puntos) {

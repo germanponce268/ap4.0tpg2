@@ -1,23 +1,23 @@
 package Prode;
 
 public class Apuesta {
-    private Equipo equipoApostado;;
+    private String nombreEquipoApostado;
     private Integer apuesta;
 
     public Apuesta() {
     }
 
-    public Apuesta(Equipo equipoApostado, Integer apuesta) {
-        this.equipoApostado = equipoApostado;
+    public Apuesta(String equipoApostado, Integer apuesta) {
+        this.nombreEquipoApostado = equipoApostado;
         this.apuesta = apuesta;
     }
 
-    public Equipo getEquipoApostado() {
-        return equipoApostado;
+    public String getNombreEquipoApostado() {
+        return nombreEquipoApostado;
     }
 
-    public void setEquipoApostado(Equipo equipoApostado) {
-        this.equipoApostado = equipoApostado;
+    public void setNombreEquipoApostado(String nombreEquipoApostado) {
+        this.nombreEquipoApostado = nombreEquipoApostado;
     }
 
     public Integer getApuesta() {
@@ -27,19 +27,24 @@ public class Apuesta {
     public void setApuesta(Integer apuesta) {
         this.apuesta = apuesta;
     }
-    public Equipo calcularEquipoApostado(Integer apuesta, String equipo1, String equipo2){
-        if(apuesta > 2)
-            return this.equipoApostado = new Equipo(equipo2);
-        else if(apuesta < 2)
-            return this.equipoApostado = new Equipo(equipo1);
-        else
-            return this.equipoApostado = new Equipo("EMPATE");
+    public String calcularEquipoApostado(Integer apuesta, String equipo1, String equipo2){
+        switch (apuesta){
+            case 1:
+                return this.nombreEquipoApostado = new String(equipo1);
+            case 2:
+                 return this.nombreEquipoApostado = new String("EMPATE");
+            case 3:
+                return this.nombreEquipoApostado = new String(equipo2);
+            default:
+                return null;
+
+        }
     }
 
     @Override
     public String toString() {
         return "Apuesta{" +
-                "equipoApostado=" + equipoApostado +
+                "equipoApostado=" + nombreEquipoApostado +
                 ", apuesta=" + apuesta +
                 '}';
     }
