@@ -2,8 +2,8 @@ package Prode;
 
 public class Partido {
     private Integer nro;
-   private Equipo local;
-   private Equipo visitante;
+   private String local;
+   private String visitante;
 
    private Integer golesLocal;
    private Integer golesVisitante;
@@ -12,15 +12,23 @@ public class Partido {
     public Partido() {
     }
 
-    public Partido(Integer nro, Equipo local, Equipo visitante, Integer golesLocal, Integer golesVisitante, Integer resultado) {
+    public Partido(Integer nro, String local, String visitante, Integer golesLocal, Integer golesVisitante) {
         this.nro = nro;
         this.local = local;
         this.visitante = visitante;
         this.golesLocal = golesLocal;
         this.golesVisitante = golesVisitante;
-        this.resultado = resultado;
+        this.resultado = obtenerResultado(golesLocal, golesVisitante);
     }
-
+    private Integer obtenerResultado(Integer golesLocal, Integer golesVisitante) {
+        if(golesLocal > golesVisitante){
+            return 1;
+        }else if(golesLocal == golesVisitante){
+            return 2;
+        }else{
+            return 3;
+        }
+    }
     public Integer getNro() {
         return nro;
     }
@@ -37,19 +45,19 @@ public class Partido {
         this.resultado = resultado;
     }
 
-    public Equipo getLocal() {
+    public String getLocal() {
         return local;
     }
 
-    public void setLocal(Equipo local) {
+    public void setLocal(String local) {
         this.local = local;
     }
 
-    public Equipo getVisitante() {
+    public String getVisitante() {
         return visitante;
     }
 
-    public void setVisitante(Equipo visitante) {
+    public void setVisitante(String visitante) {
         this.visitante = visitante;
     }
 

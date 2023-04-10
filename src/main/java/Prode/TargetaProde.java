@@ -27,7 +27,7 @@ public class TargetaProde {
     public Integer getPuntos() {
         return puntos;
     }
-    public void calcularPuntaje(Collection<Partido> ronda){
+    public void calcularPuntaje(ArrayList<Partido> ronda){
         for(Partido partido : ronda){
             if(partido.getResultado() == this.getApuestas().get(partido.getNro()-1).getApuesta()){
                 this.puntos++;
