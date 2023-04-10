@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a8d70d9-e5f6-4dbe-ba88-27a4bf230e6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/partidosmundial2.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pronosticosMundial.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Prode/Persona.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/consigna.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/partidosmundial.csv" afterDir="false" />
