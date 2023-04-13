@@ -10,6 +10,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
@@ -17,28 +18,58 @@ public class Main {
         static TargetaProde prode = new TargetaProde();
         static Apuesta jugada = new Apuesta() ;
         static Persona jugador = new Persona("Jose", "Perez");
+        static Partido partido = new Partido();
     public static void main(String[] args) throws IOException, SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
 
 
         Connection con = AdministadorDeConexiones.conectar();
 
         Statement st  = con.createStatement();
-        ResultSet rs = st.executeQuery("SELECT * FROM pronosticos");
+        Statement stApuesta = con.createStatement();
+        ResultSet rs = st.executeQuery("SELECT * FROM resultados");
+        ResultSet rsApuestas = stApuesta.executeQuery("SELECT * FROM apuestas");
 
         while(rs.next()){
             int nroPartido = rs.getInt("nro_partido");
             String equipoLocal = rs.getString("equipo_local");
             String equipoVisitante = rs.getString("equipo_visitante");
-            int apuesta = rs.getInt("apuesta");
+            int golesLocal = rs.getInt("goles_local");
+            int golesVisitante = rs.getInt("goles_visitante");
 
-            System.out.println(nroPartido + " " + equipoLocal + " " + equipoVisitante + " " + apuesta);
+            partido = new Partido(nroPartido,equipoLocal,equipoVisitante,golesLocal,golesVisitante);
+
+            fase.agregarPartido(partido);
+
+
+            System.out.println(nroPartido + " " + equipoLocal + " " + golesLocal + " " +  equipoVisitante + " " + golesVisitante + " \n" );
+        }
+        while(rsApuestas.next()){
+            int nroApuesta = rsApuestas.getInt("nro_apuesta");
+            String local = rsApuestas.getString("equipo_local");
+            String visitante = rsApuestas.getString("equipo_visitante");
+            int apuesta = rsApuestas.getInt("apuesta");
+            String nombreApostador = rsApuestas.getString("nombre_apostador");
+
+            jugada = new Apuesta(local, visitante, apuesta,nroApuesta);
+
+            prode.agregarApuesta(jugada);
+
+            System.out.println(nroApuesta + " " + local + " " + visitante + " \n" + apuesta + " " + nombreApostador);
+
+            prode.calcularPuntaje(fase.getPartidos(),nombreApostador);
         }
 
-        if(con !=null){
-            System.out.println("Exito!");
-        }else{
-            System.out.println("Fracaso");
+
+        for(Map.Entry<String, Integer> entry : prode.getParticipantes().entrySet()){
+            String nombre = entry.getKey();
+            int puntos = entry.getValue();
+            System.out.println(nombre + " saco " + puntos);
         }
+
+        st.close();
+        con.close();
+
+
     }
 
 

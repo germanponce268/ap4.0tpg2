@@ -1,15 +1,26 @@
 package Prode;
 
 public class Apuesta {
+
+    private Integer nroApuesta;
     private String nombreEquipoApostado;
     private Integer apuesta;
 
     public Apuesta() {
     }
 
-    public Apuesta(String equipoApostado, Integer apuesta) {
-        this.nombreEquipoApostado = equipoApostado;
+    public Apuesta(String local, String visitante, Integer apuesta, Integer nroApuesta) {
+        this.nombreEquipoApostado = calcularEquipoApostado(apuesta, local,visitante);
         this.apuesta = apuesta;
+        this.nroApuesta = nroApuesta;
+    }
+
+    public Integer getNroApuesta() {
+        return nroApuesta;
+    }
+
+    public void setNroApuesta(Integer nroApuesta) {
+        this.nroApuesta = nroApuesta;
     }
 
     public String getNombreEquipoApostado() {
@@ -27,7 +38,7 @@ public class Apuesta {
     public void setApuesta(Integer apuesta) {
         this.apuesta = apuesta;
     }
-    public String calcularEquipoApostado(Integer apuesta, String equipo1, String equipo2){
+     private String calcularEquipoApostado(Integer apuesta, String equipo1, String equipo2){
         switch (apuesta){
             case 1:
                 return this.nombreEquipoApostado = new String(equipo1);
