@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a8d70d9-e5f6-4dbe-ba88-27a4bf230e6c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Prode/AdministadorDeConexiones.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Prode/Persona.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/consigna.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/partidosmundial.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/partidosmundial3.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/resultados2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Equipo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Fase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Fase.java" afterDir="false" />
@@ -53,7 +57,10 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/laded/IdeaProjects/AP-MYJ-TT-G2-TP&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/laded/IdeaProjects/AP-MYJ-TT-G2-TP/src/main/resources/postgresql-42.6.0.jar&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
@@ -99,12 +106,15 @@
     </task>
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Prode/Main.java</url>
-          <line>28</line>
+          <line>33</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
