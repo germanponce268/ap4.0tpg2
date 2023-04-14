@@ -55,9 +55,9 @@ public class Main {
         prode.calcularPuntaje(fase.getPartidos());
         jugador.setTargetaProde(prode);
 
-        System.out.println("El jugador " + jugador.getNombre()  + " saco " + prode.getPuntos()+ " puntos!!");
+        System.out.println("El participante " + jugador.getNombre()  + " saco " + prode.getPuntos()+ " puntos!!");
 
-        JOptionPane.showMessageDialog(null,"El jugador" + jugador.getNombre() + " saco " + prode.getPuntos()+ " puntos!") ;
+        JOptionPane.showMessageDialog(null,"El participante " + jugador.getNombre() + " saco " + prode.getPuntos()+ " puntos!") ;
     }
 
 
