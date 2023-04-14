@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a8d70d9-e5f6-4dbe-ba88-27a4bf230e6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/apuestas2.cvs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resultadosMundial.txt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Prode/Persona.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/consigna.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partidosmundial.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partidosmundial3.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resultados2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pronosticosMundial.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pronosticosMundial.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Equipo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Fase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Fase.java" afterDir="false" />
@@ -62,6 +61,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\laded\IdeaProjects\AP-MYJ-TT-G2-TP" />
       <recent name="C:\Users\laded\IdeaProjects\AP-MYJ-TT-G2-TP\src\main\java" />
       <recent name="C:\Users\laded\IdeaProjects\AP-MYJ-TT-G2-TP\src\main\java\Prode" />
     </key>
@@ -124,6 +124,16 @@
           <url>file://$PROJECT_DIR$/src/main/java/Prode/Main.java</url>
           <line>58</line>
           <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Prode/Main.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Prode/Main.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

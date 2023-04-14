@@ -1,64 +1,192 @@
-﻿1;1;Qatar;Ecuador;3
-2;1;Inglaterra;Irán;1
-3;1;Senegal;Países Bajos;3
-4;1;Estados Unidos;Gales;1
-5;1;Argentina;Arabia Saudita;1
-6;1;Dinamarca;Túnez;2
-7;1;México;Polonia;2
-8;1;Francia;Australia;1
-9;1;Marruecos;Croacia;3
-10;1;Alemania;Japón;1
-11;1;España;Costa Rica;1
-12;1;Bélgica;Canadá;3
-13;1;Suiza;Camerún;1
-14;1;Uruguay;Corea del sur;1
-15;1;Portugal;Ghana;1
-16;1;Brasil;Serbia;1
-17;1;Gales;Irán;1
-18;1;Qatar;Senegal;1
-19;1;Países Bajos;Ecuador;2
-20;1;Inglaterra;Estados Unidos;1
-21;1;Túnez;Australia;1
-22;1;Polonia;Arabia Saudita;3
-23;1;Francia;Dinamarca;1
-24;1;Argentina;México;3
-25;1;Japón;Costa Rica;1
-26;1;Bélgica;Marruecos;3
-27;1;Croacia;Canadá;2
-28;1;España;Alemania;1
-29;1;Camerún;Serbia;1
-30;1;Corea del sur;Ghana;2
-31;1;Brasil;Suiza;1
-32;1;Portugal;Uruguay;1
-33;1;Países Bajos;Qatar;1
-34;1;Ecuador;Senegal;3
-35;1;Gales;Inglaterra;1
-36;1;Irán;Estados Unidos;3
-37;1;Túnez;Francia;3
-38;1;Australia;Dinamarca;3
-39;1;Polonia;Argentina;1
-40;1;Arabia Saudita;México;3
-41;1;Croacia;Bélgica;3
-42;1;Canadá;Marruecos;1
-43;1;Japón;España;1
-44;1;Costa Rica;Alemania;2
-45;1;Corea del sur;Portugal;1
-46;1;Ghana;Uruguay;1
-47;1;Camerún;Brasil;1
-48;1;Serbia;Suiza;3
-49;2;Países Bajos;Estados Unidos;1
-50;2;Argentina;Australia;1
-51;2;Francia;Polonia;3
-52;2;Inglaterra;Senegal;1
-53;2;Japón;Croacia;3
-54;2;Brasil;Corea del sur;1
-55;2;Marruecos;España;1
-56;2;Portugal;Suiza;1
-57;3;Croacia;Brasil;3
-58;3;Países Bajos;Argentina;3
-59;3;Marruecos;Portugal;1
-60;3;Inglaterra;Francia;3
-61;4;Argentina;Croacia;1
-62;4;Francia;Marruecos;1
-63;5;Croacia;Marruecos;1
-64;5;Argentina;Francia;1
+﻿juan;1;1;Qatar;Ecuador;1
+juan;2;1;Inglaterra;Irán;2
+juan;3;1;Senegal;Países Bajos;1
+juan;4;1;Estados Unidos;Gales;1
+juan;5;1;Argentina;Arabia Saudita;1
+juan;6;1;Dinamarca;Túnez;2
+juan;7;1;México;Polonia;2
+juan;8;1;Francia;Australia;3
+juan;9;1;Marruecos;Croacia;1
+juan;10;1;Alemania;Japón;1
+juan;11;1;España;Costa Rica;1
+juan;12;1;Bélgica;Canadá;2
+juan;13;1;Suiza;Camerún;1
+juan;14;1;Uruguay;Corea del sur;1
+juan;15;1;Portugal;Ghana;1
+juan;16;1;Brasil;Serbia;1
+juan;17;1;Gales;Irán;1
+juan;18;1;Qatar;Senegal;1
+juan;19;1;Países Bajos;Ecuador;2
+juan;20;1;Inglaterra;Estados Unidos;1
+juan;21;1;Túnez;Australia;3
+juan;22;1;Polonia;Arabia Saudita;2
+juan;23;1;Francia;Dinamarca;2
+juan;24;1;Argentina;México;2
+juan;25;1;Japón;Costa Rica;2
+juan;26;1;Bélgica;Marruecos;1
+juan;27;1;Croacia;Canadá;1
+juan;28;1;España;Alemania;3
+juan;29;1;Camerún;Serbia;2
+juan;30;1;Corea del sur;Ghana;3
+juan;31;1;Brasil;Suiza;2
+juan;32;1;Portugal;Uruguay;3
+juan;33;1;Países Bajos;Qatar;1
+juan;34;1;Ecuador;Senegal;3
+juan;35;1;Gales;Inglaterra;1
+juan;36;1;Irán;Estados Unidos;3
+juan;7;1;Túnez;Francia;3
+juan;38;1;Australia;Dinamarca;3
+juan;39;1;Polonia;Argentina;1
+juan;40;1;Arabia Saudita;México;3
+juan;41;1;Croacia;Bélgica;3
+juan;42;1;Canadá;Marruecos;1
+juan;43;1;Japón;España;1
+juan;44;1;Costa Rica;Alemania;2
+juan;45;1;Corea del sur;Portugal;1
+juan;46;1;Ghana;Uruguay;1
+juan;47;1;Camerún;Brasil;1
+juan;48;1;Serbia;Suiza;3
+juan;49;2;Países Bajos;Estados Unidos;1
+juan;50;2;Argentina;Australia;1
+juan;51;2;Francia;Polonia;3
+juan;52;2;Inglaterra;Senegal;1
+juan;53;2;Japón;Croacia;3
+juan;54;2;Brasil;Corea del sur;1
+juan;55;2;Marruecos;España;2
+juan;56;2;Portugal;Suiza;3
+juan;57;3;Croacia;Brasil;1
+juan;58;3;Países Bajos;Argentina;3
+juan;59;3;Marruecos;Portugal;1
+juan;60;3;Inglaterra;Francia;3
+juan;61;4;Argentina;Croacia;1
+juan;62;4;Francia;Marruecos;1
+juan;63;5;Croacia;Marruecos;1
+juan;64;5;Argentina;Francia;1
+ana;1;1;Qatar;Ecuador;3
+ana;2;1;Inglaterra;Irán;1
+ana;3;1;Senegal;Países Bajos;3
+ana;4;1;Estados Unidos;Gales;1
+ana;5;1;Argentina;Arabia Saudita;1
+ana;6;1;Dinamarca;Túnez;2
+ana;7;1;México;Polonia;2
+ana;8;1;Francia;Australia;1
+ana;9;1;Marruecos;Croacia;3
+ana;10;1;Alemania;Japón;1
+ana;11;1;España;Costa Rica;1
+ana;12;1;Bélgica;Canadá;3
+ana;13;1;Suiza;Camerún;1
+ana;14;1;Uruguay;Corea del sur;1
+ana;15;1;Portugal;Ghana;1
+ana;16;1;Brasil;Serbia;1
+ana;17;1;Gales;Irán;1
+ana;18;1;Qatar;Senegal;1
+ana;19;1;Países Bajos;Ecuador;2
+ana;20;1;Inglaterra;Estados Unidos;1
+ana;21;1;Túnez;Australia;1
+ana;22;1;Polonia;Arabia Saudita;3
+ana;23;1;Francia;Dinamarca;1
+ana;24;1;Argentina;México;3
+ana;25;1;Japón;Costa Rica;1
+ana;26;1;Bélgica;Marruecos;3
+ana;27;1;Croacia;Canadá;2
+ana;28;1;España;Alemania;1
+ana;29;1;Camerún;Serbia;1
+ana;30;1;Corea del sur;Ghana;2
+ana;31;1;Brasil;Suiza;1
+ana;32;1;Portugal;Uruguay;1
+ana;33;1;Países Bajos;Qatar;1
+ana;34;1;Ecuador;Senegal;3
+ana;35;1;Gales;Inglaterra;1
+ana;36;1;Irán;Estados Unidos;3
+ana;7;1;Túnez;Francia;3
+ana;38;1;Australia;Dinamarca;3
+ana;39;1;Polonia;Argentina;1
+ana;40;1;Arabia Saudita;México;3
+ana;41;1;Croacia;Bélgica;3
+ana;42;1;Canadá;Marruecos;1
+ana;43;1;Japón;España;1
+ana;44;1;Costa Rica;Alemania;2
+ana;45;1;Corea del sur;Portugal;1
+ana;46;1;Ghana;Uruguay;1
+ana;47;1;Camerún;Brasil;1
+ana;48;1;Serbia;Suiza;3
+ana;49;2;Países Bajos;Estados Unidos;1
+ana;50;2;Argentina;Australia;1
+ana;51;2;Francia;Polonia;3
+ana;52;2;Inglaterra;Senegal;1
+ana;53;2;Japón;Croacia;3
+ana;54;2;Brasil;Corea del sur;1
+ana;55;2;Marruecos;España;1
+ana;56;2;Portugal;Suiza;1
+ana;57;3;Croacia;Brasil;3
+ana;58;3;Países Bajos;Argentina;3
+ana;59;3;Marruecos;Portugal;1
+ana;60;3;Inglaterra;Francia;3
+ana;61;4;Argentina;Croacia;1
+ana;62;4;Francia;Marruecos;1
+ana;63;5;Croacia;Marruecos;1
+ana;64;5;Argentina;Francia;1
+carlos;1;1;Qatar;Ecuador;3
+carlos;2;1;Inglaterra;Irán;1
+carlos;3;1;Senegal;Países Bajos;3
+carlos;4;1;Estados Unidos;Gales;1
+carlos;5;1;Argentina;Arabia Saudita;1
+carlos;6;1;Dinamarca;Túnez;2
+carlos;7;1;México;Polonia;2
+carlos;8;1;Francia;Australia;1
+carlos;9;1;Marruecos;Croacia;3
+carlos;10;1;Alemania;Japón;1
+carlos;11;1;España;Costa Rica;1
+carlos;12;1;Bélgica;Canadá;3
+carlos;13;1;Suiza;Camerún;1
+carlos;14;1;Uruguay;Corea del sur;1
+carlos;15;1;Portugal;Ghana;1
+carlos;16;1;Brasil;Serbia;1
+carlos;17;1;Gales;Irán;1
+carlos;18;1;Qatar;Senegal;1
+carlos;19;1;Países Bajos;Ecuador;2
+carlos;20;1;Inglaterra;Estados Unidos;1
+carlos;21;1;Túnez;Australia;1
+carlos;22;1;Polonia;Arabia Saudita;3
+carlos;23;1;Francia;Dinamarca;1
+carlos;24;1;Argentina;México;3
+carlos;25;1;Japón;Costa Rica;3
+carlos;26;1;Bélgica;Marruecos;3
+carlos;27;1;Croacia;Canadá;2
+carlos;28;1;España;Alemania;3
+carlos;29;1;Camerún;Serbia;1
+carlos;30;1;Corea del sur;Ghana;2
+carlos;31;1;Brasil;Suiza;3
+carlos;32;1;Portugal;Uruguay;1
+carlos;33;1;Países Bajos;Qatar;1
+carlos;34;1;Ecuador;Senegal;3
+carlos;35;1;Gales;Inglaterra;1
+carlos;36;1;Irán;Estados Unidos;3
+carlos;7;1;Túnez;Francia;3
+carlos;38;1;Australia;Dinamarca;3
+carlos;39;1;Polonia;Argentina;1
+carlos;40;1;Arabia Saudita;México;3
+carlos;41;1;Croacia;Bélgica;2
+carlos;42;1;Canadá;Marruecos;1
+carlos;43;1;Japón;España;2
+carlos;44;1;Costa Rica;Alemania;2
+carlos;45;1;Corea del sur;Portugal;1
+carlos;46;1;Ghana;Uruguay;3
+carlos;47;1;Camerún;Brasil;3
+carlos;48;1;Serbia;Suiza;3
+carlos;49;2;Países Bajos;Estados Unidos;1
+carlos;50;2;Argentina;Australia;1
+carlos;51;2;Francia;Polonia;2
+carlos;52;2;Inglaterra;Senegal;1
+carlos;53;2;Japón;Croacia;1
+carlos;54;2;Brasil;Corea del sur;1
+carlos;55;2;Marruecos;España;3
+carlos;56;2;Portugal;Suiza;2
+carlos;57;3;Croacia;Brasil;3
+carlos;58;3;Países Bajos;Argentina;3
+carlos;59;3;Marruecos;Portugal;2
+carlos;60;3;Inglaterra;Francia;3
+carlos;61;4;Argentina;Croacia;2
+carlos;62;4;Francia;Marruecos;3
+carlos;63;5;Croacia;Marruecos;3
+carlos;64;5;Argentina;Francia;2
