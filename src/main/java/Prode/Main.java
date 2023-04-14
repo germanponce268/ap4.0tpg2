@@ -12,7 +12,6 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
-
     static Fase fase = new Fase();
     static Apuesta jugada = new Apuesta();
     static TargetaProde prode = new TargetaProde();
@@ -57,8 +56,9 @@ public class Main {
             jugada = new Apuesta(equipoLocal,equipoVisitante,Integer.parseInt(apuesta),Integer.parseInt(nroPartido));
 
             prode.agregarApuesta(jugada);
+
             prode.calcularPuntaje(fase.getPartidos(), nombreApostador);
-            System.out.println(nroPartido);
+
         }
 
         for(Map.Entry<String, Integer> entry : prode.getParticipantes().entrySet()){
@@ -66,7 +66,5 @@ public class Main {
             int puntos = entry.getValue();
             System.out.println(nombre + " saco " + puntos);
         }
-
-        System.out.println("Anda " + fase.getPartidos().size() + " " + prode.getApuestas().size());
     }
 }

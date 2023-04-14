@@ -16,18 +16,6 @@ public class TargetaProde {
     public void agregarApuesta(Apuesta apuesta){
         this.apuestas.add(apuesta);
     }
-
-    public ArrayList<Apuesta> getApuestas() {
-        return apuestas;
-    }
-
-    public void setApuestas(ArrayList<Apuesta> apuestas) {
-        this.apuestas = apuestas;
-    }
-
-    public Integer getPuntos() {
-        return puntosGanados;
-    }
     public void calcularPuntaje(ArrayList<Partido> partidos, String nombreApostador){
         for(Partido partido : partidos){
              if(partido.getNroPartido().equals(this.apuestas.get(this.apuestas.size()-1).getNroPartido())){
@@ -47,11 +35,4 @@ public class TargetaProde {
         return participantes;
     }
 
-    public void setParticipantes(HashMap<String, Integer> participantes) {
-        this.participantes = participantes;
-    }
-
-    public void setPuntos(Integer puntos) {
-        this.puntosGanados = puntos;
-    }
 }
