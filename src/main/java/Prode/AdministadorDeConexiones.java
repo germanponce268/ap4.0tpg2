@@ -15,7 +15,7 @@ public class AdministadorDeConexiones {
         dbDriver = "org.postgresql.Driver";
         dbUsuario = "postgres";
         dbPassword = "L4D3d10s";
-        url = "jdbc:postgresql://localhost:5432/practico";
+        url = "jdbc:postgresql://localhost:5432/postgres";
         Class.forName(dbDriver).newInstance();
         Connection conn = DriverManager.getConnection(url,dbUsuario,dbPassword);
         return conn;

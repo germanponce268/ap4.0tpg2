@@ -7,6 +7,7 @@
     <list default="true" id="0a8d70d9-e5f6-4dbe-ba88-27a4bf230e6c" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/java/Prode/AdministadorDeConexiones.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/consigna.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Equipo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Fase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Fase.java" afterDir="false" />
@@ -105,9 +106,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Prode/Main.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="9" />
+          <url>file://$PROJECT_DIR$/src/main/java/Prode/TargetaProde.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

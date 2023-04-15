@@ -26,8 +26,8 @@ public class Main {
 
         Statement st  = con.createStatement();
         Statement stApuesta = con.createStatement();
-        ResultSet rs = st.executeQuery("SELECT * FROM resultados");
-        ResultSet rsApuestas = stApuesta.executeQuery("SELECT * FROM apuestas");
+        ResultSet rs = st.executeQuery("SELECT * FROM prode.resultados");
+        ResultSet rsApuestas = stApuesta.executeQuery("SELECT * FROM prode.pronosticos");
 
         while(rs.next()){
             int nroPartido = rs.getInt("nro_partido");
@@ -45,12 +45,13 @@ public class Main {
         }
         while(rsApuestas.next()){
             int nroApuesta = rsApuestas.getInt("nro_apuesta");
+            int nroPartido = rsApuestas.getInt("nro_partido");
             String local = rsApuestas.getString("equipo_local");
             String visitante = rsApuestas.getString("equipo_visitante");
             int apuesta = rsApuestas.getInt("apuesta");
-            String nombreApostador = rsApuestas.getString("nombre_apostador");
+            String nombreApostador = rsApuestas.getString("nombre");
 
-            jugada = new Apuesta(local, visitante, apuesta,nroApuesta);
+            jugada = new Apuesta(local, visitante, apuesta,nroApuesta, nroPartido);
 
             prode.agregarApuesta(jugada);
 
