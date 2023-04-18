@@ -1,13 +1,13 @@
-﻿juan;1;1;Qatar;Ecuador;1
-juan;2;1;Inglaterra;Irán;2
-juan;3;1;Senegal;Países Bajos;1
+﻿juan;1;1;Qatar;Ecuador;3
+juan;2;1;Inglaterra;Irán;1
+juan;3;1;Senegal;Países Bajos;3
 juan;4;1;Estados Unidos;Gales;1
-juan;5;1;Argentina;Arabia Saudita;1
-juan;6;1;Dinamarca;Túnez;2
+juan;5;1;Argentina;Arabia Saudita;3
+juan;6;1;Dinamarca;Túnez;3
 juan;7;1;México;Polonia;2
-juan;8;1;Francia;Australia;3
-juan;9;1;Marruecos;Croacia;1
-juan;10;1;Alemania;Japón;1
+juan;8;1;Francia;Australia;1
+juan;9;1;Marruecos;Croacia;3
+juan;10;1;Alemania;Japón;3
 juan;11;1;España;Costa Rica;1
 juan;12;1;Bélgica;Canadá;2
 juan;13;1;Suiza;Camerún;1
@@ -58,10 +58,10 @@ juan;57;3;Croacia;Brasil;1
 juan;58;3;Países Bajos;Argentina;3
 juan;59;3;Marruecos;Portugal;1
 juan;60;3;Inglaterra;Francia;3
-juan;61;4;Argentina;Croacia;1
+juan;61;4;Argentina;Croacia;3
 juan;62;4;Francia;Marruecos;1
 juan;63;5;Croacia;Marruecos;1
-juan;64;5;Argentina;Francia;1
+juan;64;5;Argentina;Francia;3
 ana;1;1;Qatar;Ecuador;3
 ana;2;1;Inglaterra;Irán;1
 ana;3;1;Senegal;Países Bajos;3
@@ -189,4 +189,4 @@ carlos;60;3;Inglaterra;Francia;3
 carlos;61;4;Argentina;Croacia;2
 carlos;62;4;Francia;Marruecos;3
 carlos;63;5;Croacia;Marruecos;3
-carlos;64;5;Argentina;Francia;2
+carlos;64;5;Argentina;Francia;3

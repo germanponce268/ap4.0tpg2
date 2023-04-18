@@ -18,7 +18,7 @@ public class Main {
     static Partido partido = new Partido();
     public static void main(String[] args) throws IOException {
 
-        Path resultadosLocal = Paths.get("resultadosMundial.txt");
+        Path resultadosLocal = Paths.get("resultadosMundial2.csv");
         Path pronosticoLocal = Paths.get("pronosticosMundial.csv");
 
 
@@ -26,45 +26,45 @@ public class Main {
         Scanner lector2 = new Scanner(pronosticoLocal);
 
 
-        lector.useDelimiter("[;\\r\\n]+");
-        lector2.useDelimiter("[;\\r\\n]+");
+        lector.useDelimiter("[;\\n\\r]+");
+        lector2.useDelimiter("[;\\n\\r]+");
 
+        while(lector.hasNextInt()){
+            int nroPartido = lector.nextInt();
+            //if (nroPartido.equals("") || nroPartido.equals(" ")) nroPartido = lector.next();
+            int nroFase = lector.nextInt();
+            String local = lector.next();
+            if (local.equals("") || local.equals(" ")) local = lector.next();
+            String visitante = lector.next();
+            int golesLocal = lector.nextInt();
+            int golesVisitante = lector.nextInt();
+
+            partido = new Partido(nroFase,nroPartido , local, visitante,golesLocal, golesVisitante);
+
+            fase.agregarPartido(partido);
+        }
         while(lector2.hasNext()){
-            if(lector.hasNext()){
-                String nroPartido = lector.next();
-                if (nroPartido.equals("") || nroPartido.equals(" ")) nroPartido = lector.next();
-                String nroFase = lector.next();
-                String local = lector.next();
-                if (local.equals("") || local.equals(" ")) local = lector.next();
-                String visitante = lector.next();
-                String golesLocal = lector.next();
-                String golesVisitante = lector.next();
-
-                partido = new Partido(Integer.parseInt(nroPartido),Integer.parseInt(nroPartido), local, visitante, Integer.parseInt(golesLocal), Integer.parseInt(golesVisitante));
-
-                fase.agregarPartido(partido);
-            }
             String nombreApostador = lector2.next();
             if (nombreApostador.equals("") || nombreApostador.equals(" ")) nombreApostador = lector2.next();
-            String nroPartido = lector2.next();
-            String nroFaseApuesta = lector2.next();
+            int nroPartido = lector2.nextInt();
+            int nroFaseApuesta = lector2.nextInt();
             String equipoLocal = lector2.next();
             if (equipoLocal.equals("") || equipoLocal.equals(" ")) equipoLocal = lector2.next();
             String equipoVisitante = lector2.next();
-            String apuesta = lector2.next();
+            int apuesta = lector2.nextInt();
 
-            jugada = new Apuesta(equipoLocal,equipoVisitante,Integer.parseInt(apuesta),Integer.parseInt(nroPartido));
+            jugada = new Apuesta(nombreApostador, equipoLocal,equipoVisitante,apuesta,nroPartido);
 
             prode.agregarApuesta(jugada);
 
-            prode.calcularPuntaje(fase.getPartidos(), nombreApostador);
+            prode.calcularPuntaje(jugada,  fase.getPartidos());
 
         }
 
         for(Map.Entry<String, Integer> entry : prode.getParticipantes().entrySet()){
             String nombre = entry.getKey();
             int puntos = entry.getValue();
-            System.out.println(nombre + " saco " + puntos);
+            System.out.println(nombre + " saco " + puntos + " puntos");
         }
     }
 }
