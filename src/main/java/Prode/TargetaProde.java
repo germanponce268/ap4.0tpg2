@@ -1,10 +1,14 @@
 package Prode;
 
+import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
-
+@Data
 public class TargetaProde {
+
+    private HashMap<Integer, Integer> puntosFases;
     private ArrayList<Apuesta> apuestas;
     private HashMap<String, Integer> participantes;
     private Integer puntosGanados;
@@ -13,59 +17,44 @@ public class TargetaProde {
         this.apuestas = new ArrayList<>();
         this.puntosGanados = 0;
         this.participantes = new HashMap<>();
+        this.puntosFases = new HashMap<>();
     }
 
     public void agregarApuesta(Apuesta apuesta){
         this.apuestas.add(apuesta);
     }
 
-    public ArrayList<Apuesta> getApuestas() {
-        return apuestas;
-    }
-
-    public void setApuestas(ArrayList<Apuesta> apuestas) {
-        this.apuestas = apuestas;
-    }
-
-    public Integer getPuntos() {
-        return puntosGanados;
-    }
-    public void calcularPuntaje(ArrayList<Partido> ronda, String nombreApostador){
-        for(Apuesta apuesta : this.apuestas){
-            if(apuesta.getNroApuesta() <= ronda.get(ronda.size()-1).getNro()){
-                if(apuesta.getNroApuesta().equals(ronda.get(ronda.size()-1).getNro()))
-                    if(apuesta.getApuesta().equals(ronda.get(ronda.size()-1).getResultado())){
-                        this.puntosGanados = 1;
-                        Integer puntajeAnterior = this.participantes.get(nombreApostador);
-                          if(this.participantes.get(nombreApostador) != null){
-                              this.participantes.put(nombreApostador, this.puntosGanados + puntajeAnterior);
-                          }else{
-                            this.participantes.put(nombreApostador, this.puntosGanados);
-                         }
-                }
-            }else{
-                break;
-            }
-        }
+    public void calcularPuntaje(Apuesta apuesta, ArrayList<Partido> partidos){
+        Integer apuestaValor = apuesta.getApuesta();
+        Integer nroFase = apuesta.getFase();
+        Integer nroPartidoApuesta = apuesta.getNroPartido();
+        String nombre = apuesta.getNombreApostador();
+       for(Partido partido : partidos){
+           Integer nroPartido = partido.getNro();
+           Integer resultado = partido.getResultado();
+           if(nroPartidoApuesta.equals(nroPartido)){
+               if(apuestaValor.equals(resultado)){
+                   int punto = 1;
+                   Integer puntajeAnterior = this.puntosFases.get(nroFase);
+                   if(puntajeAnterior==null){
+                       this.puntosFases.put(nroFase, punto );
+                   }else{
+                       this.puntosFases.put(nroFase, punto + puntajeAnterior);
+                   }
+                   this.puntosGanados = 1 ;
+                   Integer ultimoPuntaje = this.participantes.get(nombre);
+                   if(ultimoPuntaje == null){
+                       this.participantes.put(apuesta.getNombreApostador(), this.puntosGanados);
+                   }else{
+                       this.participantes.put(apuesta.getNombreApostador(), this.puntosGanados + ultimoPuntaje);
+                   }
+               }
+           }
+       }
     }
 
     public HashMap<String, Integer> getParticipantes() {
         return participantes;
     }
 
-    public void setParticipantes(HashMap<String, Integer> participantes) {
-        this.participantes = participantes;
-    }
-
-    public Integer getPuntosGanados() {
-        return puntosGanados;
-    }
-
-    public void setPuntosGanados(Integer puntosGanados) {
-        this.puntosGanados = puntosGanados;
-    }
-
-    public void setPuntos(Integer puntos) {
-        this.puntosGanados = puntos;
-    }
 }

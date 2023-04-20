@@ -7,12 +7,17 @@ import java.util.HashMap;
 public class Fase {
     private ArrayList<Partido> partidos;
 
+    private HashMap<Integer, ArrayList<Partido>> fases;
+
+
+
     public Fase() {
         this.partidos = new ArrayList<>();
+        this.fases= new HashMap<>();
     }
 
     public void agregarPartido(Partido partido){
-        this.partidos.add(partido);
+            this.partidos.add(partido);
     }
 
 

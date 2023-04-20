@@ -1,52 +1,29 @@
 package Prode;
 
+import lombok.Data;
+
+@Data
 public class Apuesta {
 
+    private Integer fase;
     private Integer nroApuesta;
     private Integer nroPartido;
     private String nombreEquipoApostado;
     private Integer apuesta;
+    private String nombreApostador;
 
     public Apuesta() {
     }
 
-    public Apuesta(String local, String visitante, Integer apuesta, Integer nroApuesta, Integer nroPartido) {
+    public Apuesta(String local, String visitante, Integer apuesta, Integer nroApuesta, Integer nroPartido, String nombreApostador, Integer fase) {
         this.nombreEquipoApostado = calcularEquipoApostado(apuesta, local,visitante);
         this.apuesta = apuesta;
         this.nroApuesta = nroApuesta;
-    }
-
-    public Integer getNroPartido() {
-        return nroPartido;
-    }
-
-    public void setNroPartido(Integer nroPartido) {
         this.nroPartido = nroPartido;
+        this.nombreApostador = nombreApostador;
+        this.fase = fase;
     }
 
-    public Integer getNroApuesta() {
-        return nroApuesta;
-    }
-
-    public void setNroApuesta(Integer nroApuesta) {
-        this.nroApuesta = nroApuesta;
-    }
-
-    public String getNombreEquipoApostado() {
-        return nombreEquipoApostado;
-    }
-
-    public void setNombreEquipoApostado(String nombreEquipoApostado) {
-        this.nombreEquipoApostado = nombreEquipoApostado;
-    }
-
-    public Integer getApuesta() {
-        return apuesta;
-    }
-
-    public void setApuesta(Integer apuesta) {
-        this.apuesta = apuesta;
-    }
      private String calcularEquipoApostado(Integer apuesta, String equipo1, String equipo2){
         switch (apuesta){
             case 1:
