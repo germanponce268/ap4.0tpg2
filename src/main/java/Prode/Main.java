@@ -12,11 +12,11 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
-    static Fase fase = new Fase();
-    static Apuesta jugada = new Apuesta();
-    static TargetaProde prode = new TargetaProde();
-    static Partido partido = new Partido();
     public static void main(String[] args) throws IOException {
+        Fase fase = new Fase();
+        Apuesta jugada = new Apuesta();
+        TargetaProde prode = new TargetaProde();
+        Partido partido = new Partido();
 
         Path resultadosLocal = Paths.get("resultadosMundial2.csv");
         Path pronosticoLocal = Paths.get("pronosticosMundial.csv");
