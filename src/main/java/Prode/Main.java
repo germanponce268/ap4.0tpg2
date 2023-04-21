@@ -31,7 +31,6 @@ public class Main {
 
         while(lector.hasNextInt()){
             int nroPartido = lector.nextInt();
-            //if (nroPartido.equals("") || nroPartido.equals(" ")) nroPartido = lector.next();
             int nroFase = lector.nextInt();
             String local = lector.next();
             if (local.equals("") || local.equals(" ")) local = lector.next();
