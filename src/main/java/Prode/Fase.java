@@ -18,6 +18,7 @@ public class Fase {
 
     public void agregarPartido(Partido partido){
             this.partidos.add(partido);
+            this.fases.put(partido.getFase(), this.partidos);
     }
 
 

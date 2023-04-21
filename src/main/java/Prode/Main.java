@@ -1,17 +1,12 @@
 package Prode;
 
-import javax.swing.*;
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Map;
-import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args) throws IOException, SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
@@ -32,13 +27,10 @@ public class Main {
             int golesLocal = rs.getInt("goles_local");
             int golesVisitante = rs.getInt("goles_visitante");
 
-
             partido = new Partido(nroPartido,equipoLocal,equipoVisitante,golesLocal,golesVisitante, nroFase);
 
             fase.agregarPartido(partido);
 
-
-            System.out.println(nroPartido + " " + equipoLocal + " " + golesLocal + " " +  equipoVisitante + " " + golesVisitante + " \n" );
         }
 
         ResultSet rsApuestas = st.executeQuery("SELECT * FROM prode.pronosticos");
@@ -56,8 +48,6 @@ public class Main {
 
             prode.agregarApuesta(jugada);
 
-            System.out.println(nroApuesta + " " + local + " " + visitante + " \n" + apuesta + " " + nombreApostador);
-
             prode.calcularPuntaje(jugada, fase.getPartidos());
         }
 
@@ -65,7 +55,7 @@ public class Main {
         for(Map.Entry<String, Integer> entry : prode.getParticipantes().entrySet()){
             String nombre = entry.getKey();
             int puntos = entry.getValue();
-            System.out.println(nombre + " saco " + puntos);
+            System.out.println(nombre + " obtuvo " + puntos + " puntos");
         }
 
         st.close();

@@ -11,11 +11,11 @@ public class TargetaProde {
     private HashMap<Integer, Integer> puntosFases;
     private ArrayList<Apuesta> apuestas;
     private HashMap<String, Integer> participantes;
-    private Integer puntosGanados;
+    private Integer contadorFases;
 
     public TargetaProde() {
         this.apuestas = new ArrayList<>();
-        this.puntosGanados = 0;
+        this.contadorFases = 0;
         this.participantes = new HashMap<>();
         this.puntosFases = new HashMap<>();
     }
@@ -34,19 +34,13 @@ public class TargetaProde {
            Integer resultado = partido.getResultado();
            if(nroPartidoApuesta.equals(nroPartido)){
                if(apuestaValor.equals(resultado)){
-                   int punto = 1;
-                   Integer puntajeAnterior = this.puntosFases.get(nroFase);
-                   if(puntajeAnterior==null){
-                       this.puntosFases.put(nroFase, punto );
-                   }else{
-                       this.puntosFases.put(nroFase, punto + puntajeAnterior);
-                   }
-                   this.puntosGanados = 1 ;
+                   
+                   this.contadorFases = 1 ;
                    Integer ultimoPuntaje = this.participantes.get(nombre);
                    if(ultimoPuntaje == null){
-                       this.participantes.put(apuesta.getNombreApostador(), this.puntosGanados);
+                       this.participantes.put(apuesta.getNombreApostador(), this.contadorFases);
                    }else{
-                       this.participantes.put(apuesta.getNombreApostador(), this.puntosGanados + ultimoPuntaje);
+                       this.participantes.put(apuesta.getNombreApostador(), this.contadorFases + ultimoPuntaje);
                    }
                }
            }
