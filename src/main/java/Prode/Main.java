@@ -55,6 +55,18 @@ public class Main {
         for(Map.Entry<String, Integer> entry : prode.getParticipantes().entrySet()){
             String nombre = entry.getKey();
             int puntos = entry.getValue();
+            Map.Entry<String, Integer> campeon = null;
+
+            if (campeon == null){
+
+                campeon = entry;
+            }else{
+                if(campeon.getValue() < puntos){
+                    campeon = entry;
+                }
+            }
+
+            System.out.println("El campeón es: " + campeon);
             System.out.println(nombre + " obtuvo " + puntos + " puntos");
         }
 
