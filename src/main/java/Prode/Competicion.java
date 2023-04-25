@@ -2,12 +2,12 @@ package Prode;
 
 import java.util.*;
 
-public class TargetaProde {
+public class Competicion {
     private HashMap<String, Integer> participantes;
     private ArrayList<Apuesta> apuestas;
     private Integer puntosGanados;
 
-    public TargetaProde() {
+    public Competicion() {
         this.apuestas = new ArrayList<>();
         this.puntosGanados = 0;
         this.participantes = new HashMap<>();
@@ -19,13 +19,30 @@ public class TargetaProde {
     public void calcularPuntaje(Apuesta apuesta, ArrayList<Partido> partidos){
         for(Partido partido : partidos){
             if(apuesta.getNroPartido().equals(partido.getNroPartido())){
-                if(apuesta.getApuesta().equals(partidos.get(partidos.size()-1).getResultado())){
+                if(apuesta.getApuesta().equals(partido.getResultado())){
                 this.puntosGanados = 1;
                 Integer ultimoPuntaje = this.participantes.get(apuesta.getNombreParticipante());
                 if(ultimoPuntaje == null){
                     this.participantes.put(apuesta.getNombreParticipante(), this.puntosGanados);
                 }else{
                     this.participantes.put(apuesta.getNombreParticipante(), this.puntosGanados+ultimoPuntaje);
+                    }
+                }
+            }
+        }
+    }
+    public void calcularPuntaje2(ArrayList<Apuesta> apuestas, ArrayList<Partido> partidos){
+        for(Apuesta apuesta : apuestas){
+            for(Partido partido : partidos){
+                if(apuesta.getNroPartido().equals(partido.getNroPartido())){
+                    if(apuesta.getApuesta().equals(partido.getResultado())){
+                        this.puntosGanados = 1;
+                        Integer ultimoPuntaje = this.participantes.get(apuesta.getNombreParticipante());
+                        if(ultimoPuntaje == null){
+                            this.participantes.put(apuesta.getNombreParticipante(), this.puntosGanados);
+                        }else{
+                            this.participantes.put(apuesta.getNombreParticipante(), this.puntosGanados+ultimoPuntaje);
+                        }
                     }
                 }
             }

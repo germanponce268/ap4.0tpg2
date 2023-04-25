@@ -1,13 +1,12 @@
 package Prode;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
-public class Fase {
+public class Fases {
     private ArrayList<Partido> partidos;
 
 
-    public Fase() {
+    public Fases() {
 
         this.partidos = new ArrayList<>();
     }

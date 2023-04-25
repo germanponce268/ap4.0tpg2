@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a8d70d9-e5f6-4dbe-ba88-27a4bf230e6c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Prode/Competicion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Prode/Fases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Prode/LectorDeDatos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Prode/Principal.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/consigna.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Equipo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Fase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Fase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Fase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Main.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Partido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Partido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Prode/TargetaProde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/TargetaProde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Prode/TargetaProde.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pronostico.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/resultados.txt" beforeDir="false" />
     </list>
@@ -81,8 +85,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Prode.Main" />
+    <configuration name="Principal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Prode.Principal" />
       <module name="AP-MYJ-TT-G2-TP" />
       <extension name="coverage">
         <pattern>
@@ -96,7 +100,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Principal" />
       </list>
     </recent_temporary>
   </component>
@@ -115,6 +119,20 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Prode/Competicion.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Prode/Principal.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Prode.Partido" memberName="resultado" />

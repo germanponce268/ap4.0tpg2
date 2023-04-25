@@ -1,5 +1,8 @@
 package Prode;
 
+import lombok.Data;
+
+@Data
 public class Apuesta {
     private String nombreParticipante;
     private String equipoLocal;
@@ -18,27 +21,5 @@ public class Apuesta {
         this.nroPartido = nroPartido;
     }
 
-    public String getNombreParticipante() {
-        return nombreParticipante;
-    }
-
-
-    public String getEquipoLocal() {
-        return equipoLocal;
-    }
-
-
-    public String getEquipoVisitante() {
-        return equipoVisitante;
-    }
-
-
-    public Integer getApuesta() {
-        return apuesta;
-    }
-
-    public Integer getNroPartido() {
-        return nroPartido;
-    }
 
 }
