@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a8d70d9-e5f6-4dbe-ba88-27a4bf230e6c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Prode/AdministradorDeConexiones.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Prode/Competicion.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Prode/Fases.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Prode/LectorDeDatos.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/Prode/Principal.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/resources/consigna.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pronosticosMundial.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pronosticosMundial.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Prode/Apuesta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Equipo.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Prode/Fase.java" beforeDir="false" />
@@ -71,7 +74,7 @@
       <recent name="C:\Users\laded\IdeaProjects\AP-MYJ-TT-G2-TP\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Principal">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Prode.Main" />
       <module name="AP-MYJ-TT-G2-TP" />
@@ -101,6 +104,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Principal" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -123,13 +127,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Prode/Competicion.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Prode/Principal.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="66" />
+          <line>25</line>
+          <option name="timeStamp" value="73" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

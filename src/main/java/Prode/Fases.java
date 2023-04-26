@@ -19,13 +19,4 @@ public class Fases {
         return partidos;
     }
 
-    private Integer calcularResultado(Integer golesLocal, Integer golesVisitante) {
-        if (golesLocal > golesVisitante) {
-            return 1;
-        } else if (golesVisitante > golesLocal) {
-            return 3;
-        } else {
-            return 2;
-        }
-    }
 }

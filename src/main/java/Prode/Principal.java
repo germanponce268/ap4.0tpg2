@@ -3,11 +3,12 @@ package Prode;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.sql.SQLException;
 import java.util.Map;
 import java.util.Scanner;
 
 public class Principal {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException, SQLException, ClassNotFoundException, InstantiationException, IllegalAccessException {
 
         LectorDeDatos lector = new LectorDeDatos();
 
@@ -15,7 +16,11 @@ public class Principal {
 
         lector.leerApuestas("pronosticosMundial.csv");
 
-        lector.calcularPuntaje();
+        //lector.leerPartidosDB();
+
+        //lector.leerApuestasDB();
+
+        lector.obtenerPuntaje();
 
         lector.informar();
     }

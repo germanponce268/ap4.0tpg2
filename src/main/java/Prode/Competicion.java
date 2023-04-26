@@ -16,22 +16,8 @@ public class Competicion {
     public void agregarApuesta(Apuesta apuesta){
         this.apuestas.add(apuesta);
     }
-    public void calcularPuntaje(Apuesta apuesta, ArrayList<Partido> partidos){
-        for(Partido partido : partidos){
-            if(apuesta.getNroPartido().equals(partido.getNroPartido())){
-                if(apuesta.getApuesta().equals(partido.getResultado())){
-                this.puntosGanados = 1;
-                Integer ultimoPuntaje = this.participantes.get(apuesta.getNombreParticipante());
-                if(ultimoPuntaje == null){
-                    this.participantes.put(apuesta.getNombreParticipante(), this.puntosGanados);
-                }else{
-                    this.participantes.put(apuesta.getNombreParticipante(), this.puntosGanados+ultimoPuntaje);
-                    }
-                }
-            }
-        }
-    }
-    public void calcularPuntaje2(ArrayList<Apuesta> apuestas, ArrayList<Partido> partidos){
+    public void calcularPuntaje(ArrayList<Apuesta> apuestas, ArrayList<Partido> partidos){
+
         for(Apuesta apuesta : apuestas){
             for(Partido partido : partidos){
                 if(apuesta.getNroPartido().equals(partido.getNroPartido())){
@@ -41,7 +27,7 @@ public class Competicion {
                         if(ultimoPuntaje == null){
                             this.participantes.put(apuesta.getNombreParticipante(), this.puntosGanados);
                         }else{
-                            this.participantes.put(apuesta.getNombreParticipante(), this.puntosGanados+ultimoPuntaje);
+                            this.participantes.put(apuesta.getNombreParticipante(), ultimoPuntaje + this.puntosGanados);
                         }
                     }
                 }
