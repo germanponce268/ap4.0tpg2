@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a8d70d9-e5f6-4dbe-ba88-27a4bf230e6c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/partidosmundial.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pronosticosMundial.csv" beforeDir="false" afterPath="$PROJECT_DIR$/pronosticosMundial.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resultadosMundial.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resultadosMundial.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resultadosMundial2.csv" beforeDir="false" />
-    </list>
+    <list default="true" id="0a8d70d9-e5f6-4dbe-ba88-27a4bf230e6c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,10 +105,22 @@
       <option name="presentableId" value="Default" />
       <updated>1679965487559</updated>
     </task>
+    <task id="LOCAL-00001" summary="con todo">
+      <created>1682621343161</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682621343162</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.csv" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="con todo" />
+    <option name="LAST_COMMIT_MESSAGE" value="con todo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

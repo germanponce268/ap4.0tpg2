@@ -4,22 +4,27 @@ import lombok.Data;
 
 @Data
 public class Apuesta {
-    private String nombreParticipante;
+    private String nombreApostador;
+    private Integer nroPartido;
+    private Integer nroFaseApuesta;
     private String equipoLocal;
     private String equipoVisitante;
     private Integer apuesta;
-    private Integer nroPartido;
 
-    public Apuesta() {
+    /*public Apuesta(String nombreApostador, int equipoLocal, int equipoVisitante, String nroPartido, String apuesta, int nroFaseApuesta) {
     }
-
-    public Apuesta(String nombreParticipante, String equipoLocal, String equipoVisitante, Integer apuesta, Integer nroPartido) {
-        this.nombreParticipante = nombreParticipante;
+*/
+    public Apuesta(String nombreApostador, Integer nroPartido,Integer nroFaseApuesta, String equipoLocal, String equipoVisitante,Integer apuesta) {
+        this.nombreApostador = nombreApostador;
+        this.nroPartido = nroPartido;
+        this.nroFaseApuesta = nroFaseApuesta;
         this.equipoLocal = equipoLocal;
         this.equipoVisitante = equipoVisitante;
         this.apuesta = apuesta;
-        this.nroPartido = nroPartido;
+
     }
 
 
+    /*public Apuesta(String nombreApostador, Integer nroPartido, Integer nroFaseApuesta, String equipoLocal, String equipoVisitante, Integer apuesta) {
+    }*/
 }
