@@ -21,11 +21,12 @@ public class Competicion {
         for(Apuesta apuesta : apuestas){
             for(Partido partido : partidos){
                 if(apuesta.getNroPartido().equals(partido.getNroPartido())){
+                    System.out.println("Partido " + partido.getLocal() +  " " + partido.getGolesLocal() + " vs " + partido.getVisitante() + " " + partido.getGolesVisitante() + " " +  apuesta.getNombreParticipante() + " aposto " + apuesta.getApuesta());
                     if(apuesta.getApuesta().equals(partido.getResultado())){
                         this.puntosGanados = 1;
                         Integer ultimoPuntaje = this.participantes.get(apuesta.getNombreParticipante());
                         if(ultimoPuntaje == null){
-                            this.participantes.put(apuesta.getNombreParticipante(), this.puntosGanados);
+                            this.participantes.put(apuesta.getNombreParticipante(), this.puntosGanados);;
                         }else{
                             this.participantes.put(apuesta.getNombreParticipante(), ultimoPuntaje + this.puntosGanados);
                         }
