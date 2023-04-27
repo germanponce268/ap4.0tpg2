@@ -1,0 +1,192 @@
+carla;1;1;Qatar;Ecuador;3
+carla;2;1;Inglaterra;Irán;1
+carla;3;1;Senegal;Países Bajos;3
+carla;4;1;Estados Unidos;Gales;1
+carla;5;1;Argentina;Arabia Saudita;1
+carla;6;1;Dinamarca;Túnez;2
+carla;7;1;México;Polonia;2
+carla;8;1;Francia;Australia;1
+carla;9;1;Marruecos;Croacia;3
+carla;10;1;Alemania;Japón;1
+carla;11;1;España;Costa Rica;1
+carla;12;1;Bélgica;Cgabrieldá;3
+carla;13;1;Suiza;Camerún;1
+carla;14;1;Uruguay;Corea del sur;1
+carla;15;1;Portugal;Ghgabriel;1
+carla;16;1;Brasil;Serbia;1
+carla;17;1;Gales;Irán;1
+carla;18;1;Qatar;Senegal;1
+carla;19;1;Países Bajos;Ecuador;2
+carla;20;1;Inglaterra;Estados Unidos;1
+carla;21;1;Túnez;Australia;1
+carla;22;1;Polonia;Arabia Saudita;3
+carla;23;1;Francia;Dinamarca;1
+carla;24;1;Argentina;México;3
+carla;25;1;Japón;Costa Rica;3
+carla;26;1;Bélgica;Marruecos;3
+carla;27;1;Croacia;Cgabrieldá;2
+carla;28;1;España;Alemania;3
+carla;29;1;Camerún;Serbia;1
+carla;30;1;Corea del sur;Ghgabriel;2
+carla;31;1;Brasil;Suiza;3
+carla;32;1;Portugal;Uruguay;1
+carla;33;1;Países Bajos;Qatar;1
+carla;34;1;Ecuador;Senegal;3
+carla;35;1;Gales;Inglaterra;1
+carla;36;1;Irán;Estados Unidos;3
+carla;37;1;Túnez;Francia;3
+carla;38;1;Australia;Dinamarca;3
+carla;39;1;Polonia;Argentina;1
+carla;40;1;Arabia Saudita;México;3
+carla;41;1;Croacia;Bélgica;2
+carla;42;1;Cgabrieldá;Marruecos;1
+carla;43;1;Japón;España;2
+carla;44;1;Costa Rica;Alemania;2
+carla;45;1;Corea del sur;Portugal;1
+carla;46;1;Ghgabriel;Uruguay;3
+carla;47;1;Camerún;Brasil;3
+carla;48;1;Serbia;Suiza;3
+carla;49;2;Países Bajos;Estados Unidos;1
+carla;50;2;Argentina;Australia;1
+carla;51;2;Francia;Polonia;2
+carla;52;2;Inglaterra;Senegal;1
+carla;53;2;Japón;Croacia;1
+carla;54;2;Brasil;Corea del sur;1
+carla;55;2;Marruecos;España;3
+carla;56;2;Portugal;Suiza;2
+carla;57;3;Croacia;Brasil;3
+carla;58;3;Países Bajos;Argentina;3
+carla;59;3;Marruecos;Portugal;2
+carla;60;3;Inglaterra;Francia;3
+carla;61;4;Argentina;Croacia;2
+carla;62;4;Francia;Marruecos;3
+carla;63;5;Croacia;Marruecos;3
+carla;64;5;Argentina;Francia;3
+juan;1;1;Qatar;Ecuador;3
+juan;2;1;Inglaterra;Irán;1
+juan;3;1;Senegal;Países Bajos;3
+juan;4;1;Estados Unidos;Gales;1
+juan;5;1;Argentina;Arabia Saudita;3
+juan;6;1;Dinamarca;Túnez;3
+juan;7;1;México;Polonia;2
+juan;8;1;Francia;Australia;1
+juan;9;1;Marruecos;Croacia;3
+juan;10;1;Alemania;Japón;3
+juan;11;1;España;Costa Rica;1
+juan;12;1;Bélgica;Cgabrieldá;2
+juan;13;1;Suiza;Camerún;1
+juan;14;1;Uruguay;Corea del sur;1
+juan;15;1;Portugal;Ghgabriel;1
+juan;16;1;Brasil;Serbia;1
+juan;17;1;Gales;Irán;1
+juan;18;1;Qatar;Senegal;1
+juan;19;1;Países Bajos;Ecuador;2
+juan;20;1;Inglaterra;Estados Unidos;1
+juan;21;1;Túnez;Australia;3
+juan;22;1;Polonia;Arabia Saudita;2
+juan;23;1;Francia;Dinamarca;2
+juan;24;1;Argentina;México;2
+juan;25;1;Japón;Costa Rica;2
+juan;26;1;Bélgica;Marruecos;1
+juan;27;1;Croacia;Cgabrieldá;1
+juan;28;1;España;Alemania;3
+juan;29;1;Camerún;Serbia;2
+juan;30;1;Corea del sur;Ghgabriel;3
+juan;31;1;Brasil;Suiza;2
+juan;32;1;Portugal;Uruguay;3
+juan;33;1;Países Bajos;Qatar;1
+juan;34;1;Ecuador;Senegal;3
+juan;35;1;Gales;Inglaterra;1
+juan;36;1;Irán;Estados Unidos;3
+juan;37;1;Túnez;Francia;3
+juan;38;1;Australia;Dinamarca;3
+juan;39;1;Polonia;Argentina;1
+juan;40;1;Arabia Saudita;México;3
+juan;41;1;Croacia;Bélgica;3
+juan;42;1;Cgabrieldá;Marruecos;1
+juan;43;1;Japón;España;1
+juan;44;1;Costa Rica;Alemania;2
+juan;45;1;Corea del sur;Portugal;1
+juan;46;1;Ghgabriel;Uruguay;1
+juan;47;1;Camerún;Brasil;1
+juan;48;1;Serbia;Suiza;3
+juan;49;2;Países Bajos;Estados Unidos;1
+juan;50;2;Argentina;Australia;1
+juan;51;2;Francia;Polonia;3
+juan;52;2;Inglaterra;Senegal;1
+juan;53;2;Japón;Croacia;3
+juan;54;2;Brasil;Corea del sur;1
+juan;55;2;Marruecos;España;2
+juan;56;2;Portugal;Suiza;3
+juan;57;3;Croacia;Brasil;1
+juan;58;3;Países Bajos;Argentina;3
+juan;59;3;Marruecos;Portugal;1
+juan;60;3;Inglaterra;Francia;3
+juan;61;4;Argentina;Croacia;3
+juan;62;4;Francia;Marruecos;1
+juan;63;5;Croacia;Marruecos;1
+juan;64;5;Argentina;Francia;3
+gabriel;1;1;Qatar;Ecuador;3
+gabriel;2;1;Inglaterra;Irán;1
+gabriel;3;1;Senegal;Países Bajos;3
+gabriel;4;1;Estados Unidos;Gales;1
+gabriel;5;1;Argentina;Arabia Saudita;1
+gabriel;6;1;Dinamarca;Túnez;2
+gabriel;7;1;México;Polonia;2
+gabriel;8;1;Francia;Australia;1
+gabriel;9;1;Marruecos;Croacia;3
+gabriel;10;1;Alemania;Japón;1
+gabriel;11;1;España;Costa Rica;1
+gabriel;12;1;Bélgica;Cgabrieldá;3
+gabriel;13;1;Suiza;Camerún;1
+gabriel;14;1;Uruguay;Corea del sur;1
+gabriel;15;1;Portugal;Ghgabriel;1
+gabriel;16;1;Brasil;Serbia;1
+gabriel;17;1;Gales;Irán;1
+gabriel;18;1;Qatar;Senegal;1
+gabriel;19;1;Países Bajos;Ecuador;2
+gabriel;20;1;Inglaterra;Estados Unidos;1
+gabriel;21;1;Túnez;Australia;1
+gabriel;22;1;Polonia;Arabia Saudita;3
+gabriel;23;1;Francia;Dinamarca;1
+gabriel;24;1;Argentina;México;3
+gabriel;25;1;Japón;Costa Rica;1
+gabriel;26;1;Bélgica;Marruecos;3
+gabriel;27;1;Croacia;Cgabrieldá;2
+gabriel;28;1;España;Alemania;1
+gabriel;29;1;Camerún;Serbia;1
+gabriel;30;1;Corea del sur;Ghgabriel;2
+gabriel;31;1;Brasil;Suiza;1
+gabriel;32;1;Portugal;Uruguay;1
+gabriel;33;1;Países Bajos;Qatar;1
+gabriel;34;1;Ecuador;Senegal;3
+gabriel;35;1;Gales;Inglaterra;1
+gabriel;36;1;Irán;Estados Unidos;3
+gabriel;37;1;Túnez;Francia;3
+gabriel;38;1;Australia;Dinamarca;3
+gabriel;39;1;Polonia;Argentina;1
+gabriel;40;1;Arabia Saudita;México;3
+gabriel;41;1;Croacia;Bélgica;3
+gabriel;42;1;Cgabrieldá;Marruecos;1
+gabriel;43;1;Japón;España;1
+gabriel;44;1;Costa Rica;Alemania;2
+gabriel;45;1;Corea del sur;Portugal;1
+gabriel;46;1;Ghgabriel;Uruguay;1
+gabriel;47;1;Camerún;Brasil;1
+gabriel;48;1;Serbia;Suiza;3
+gabriel;49;2;Países Bajos;Estados Unidos;1
+gabriel;50;2;Argentina;Australia;1
+gabriel;51;2;Francia;Polonia;3
+gabriel;52;2;Inglaterra;Senegal;1
+gabriel;53;2;Japón;Croacia;3
+gabriel;54;2;Brasil;Corea del sur;1
+gabriel;55;2;Marruecos;España;1
+gabriel;56;2;Portugal;Suiza;1
+gabriel;57;3;Croacia;Brasil;3
+gabriel;58;3;Países Bajos;Argentina;3
+gabriel;59;3;Marruecos;Portugal;1
+gabriel;60;3;Inglaterra;Francia;3
+gabriel;61;4;Argentina;Croacia;1
+gabriel;62;4;Francia;Marruecos;1
+gabriel;63;5;Croacia;Marruecos;1
+gabriel;64;5;Argentina;Francia;3

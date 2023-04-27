@@ -117,7 +117,7 @@ public class LectorDeDatos {
                     mayor = (Integer)puntaje;
                     ganador = (String)nombre;
                 }
-                System.out.println("El participante " + nombre + " saco " + puntaje);
+                     System.out.println("El participante " + nombre + " saco " + puntaje);
             }
             System.out.println("\n El ganador es " + ganador + " con " + mayor + " puntos");
         }

@@ -14,7 +14,7 @@ public class Principal {
 
         lector.leerPartidos("resultadosMundial2.csv");
 
-        lector.leerApuestas("pronosticosMundial.csv");
+        lector.leerApuestas("apuestasMundial.txt");
 
         //lector.leerPartidosDB();
 
