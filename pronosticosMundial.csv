@@ -1,4 +1,4 @@
-﻿juan;1;1;Qatar;Ecuador;3
+﻿juan;1;1;Qatar;Ecuador;2
 juan;2;1;Inglaterra;Irán;1
 juan;3;1;Senegal;Países Bajos;3
 juan;4;1;Estados Unidos;Gales;1
@@ -34,7 +34,7 @@ juan;33;1;Países Bajos;Qatar;1
 juan;34;1;Ecuador;Senegal;3
 juan;35;1;Gales;Inglaterra;1
 juan;36;1;Irán;Estados Unidos;3
-juan;7;1;Túnez;Francia;3
+juan;37;1;Túnez;Francia;3
 juan;38;1;Australia;Dinamarca;3
 juan;39;1;Polonia;Argentina;1
 juan;40;1;Arabia Saudita;México;3
@@ -98,7 +98,7 @@ ana;33;1;Países Bajos;Qatar;1
 ana;34;1;Ecuador;Senegal;3
 ana;35;1;Gales;Inglaterra;1
 ana;36;1;Irán;Estados Unidos;3
-ana;7;1;Túnez;Francia;3
+ana;37;1;Túnez;Francia;3
 ana;38;1;Australia;Dinamarca;3
 ana;39;1;Polonia;Argentina;1
 ana;40;1;Arabia Saudita;México;3
@@ -162,7 +162,7 @@ carlos;33;1;Países Bajos;Qatar;1
 carlos;34;1;Ecuador;Senegal;3
 carlos;35;1;Gales;Inglaterra;1
 carlos;36;1;Irán;Estados Unidos;3
-carlos;7;1;Túnez;Francia;3
+carlos;37;1;Túnez;Francia;3
 carlos;38;1;Australia;Dinamarca;3
 carlos;39;1;Polonia;Argentina;1
 carlos;40;1;Arabia Saudita;México;3
