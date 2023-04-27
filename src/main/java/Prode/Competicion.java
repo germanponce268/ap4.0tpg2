@@ -35,18 +35,6 @@ public class Competicion {
         }
     }
 
-    public void mostrarPuntajes() {
-        String nombreMaximoPuntaje = null;
-        int maximoPuntaje = 0;
-        for (String nombreParticipante : participantes.keySet()) {
-            int puntaje = participantes.get(nombreParticipante);
-            if (puntaje > maximoPuntaje) {
-                maximoPuntaje = puntaje;
-                nombreMaximoPuntaje = nombreParticipante;
-            }
-        }
-        System.out.println("El participante con más puntos es " + nombreMaximoPuntaje + " con " + maximoPuntaje + " puntos.");
-    }
     public HashMap<String, Integer> getParticipantes() {
         return participantes;
     }
